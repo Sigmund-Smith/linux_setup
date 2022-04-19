@@ -10,7 +10,7 @@ function install_function {
     for thing in ${mylist[@]}; do
 
         # next is the real shit
-        apt install $thing
+        apt install $thing -y
         echo
         echo "+++++ another one done +++++"
         echo
