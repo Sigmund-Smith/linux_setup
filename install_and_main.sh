@@ -2,7 +2,7 @@
 
 echo "yo " # declare beginning of script with a cool exclamation
 
-mylist="hi das steht hire so"
+# mylist="hi das steht hire so"
 yes_answer="y"
 
 
@@ -28,7 +28,7 @@ function setup_vimrc {
     echo ':set shiftwidth=4  " Size of an indentation (sw).' >> ~/.vimrc
     echo ':set expandtab     " Always uses spaces instead of tab characters (et).' >> ~/.vimrc
     echo ':set softtabstop=0 " Number of spaces a <Tab> counts for. When 0, featuer is off (sts).' >> ~/.vimrc
-    echo ':set autoindent    " Copy indent from current line when starting a new line.' >> ~/.vimr/c
+    echo ':set autoindent    " Copy indent from current line when starting a new line.' >> ~/.vimrc
     echo ':set smarttab      " Inserts blanks on a <Tab> key (as per sw, ts and sts).' >> ~/.vimrc
     echo "" >> ~/.vimrc    
     echo "" >> ~/.vimrc    
