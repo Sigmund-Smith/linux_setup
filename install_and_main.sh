@@ -2,7 +2,7 @@
 
 echo "yo " # declare beginning of script with a cool exclamation
 
-mylist="htop neofetch vim firefox clang keepassxc "
+mylist="htop neofetch vim firefox clang keepassxc kile"
 yes_answer="y"
 
 
