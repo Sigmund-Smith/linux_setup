@@ -2,7 +2,7 @@
 
 echo "yo " # declare beginning of script with a cool exclamation
 
-mylist="htop neofetch vim firefox"
+mylist="htop neofetch vim firefox clang keepassxc "
 yes_answer="y"
 
 
@@ -24,13 +24,32 @@ function call_pythonfile {
     python3 manage_rc_files.py
 }
 
+function install_massenger {
+    apt install thunderbird -y
+    echo 
+    echo "++++ installed thunderbird ++++"
+    flatpak install org.telegram.desktop
+    echo
+    echo "++++ install telegra.desktop +++"
+}
+
+
 #echo -n "Do you want to install things (y/n): "; read answer
-read -p "Do you want to install things? (y/n): " answer
+read -p "Do you want to install code things? (y/n): " answer
 
 if [[ "$yes_answer" == "$answer" ]]; then
     echo "yöt, istalling things"
     install_function
     echo "the installing has ended"
+
+fi
+
+read -p "Do you want to install communication things (y/n): " comm_answer
+
+if [[ "$yes_answer" == "$comm_answer" ]]; then
+    echo "yöt, istalling things"
+    install_massenger
+    echo "telegram and thunderbird have benn installed"
 
 fi
 
