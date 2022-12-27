@@ -1,5 +1,6 @@
 #! /usr/bin/python3
 import getpass
+import os
 #this file should be called by the programm installer/main file
 #this file should set upt the vimrc and bash rc file
 
@@ -10,6 +11,8 @@ def copie_file():
         vimrc_content = file.read()
     #print(vimrc_content)
     #with open(rf"/home/{getpass.getuser()}/.vimrc_test", "w") as file
+    dir_path = rf"/home/{getpass.getuser()}/.config/nvim/"
+    os.mkdir(dir_path)
     with open(rf"/home/{getpass.getuser()}/.config/nvim/init.vim", "w") as file:
         file.write(vimrc_content)
         print("init.vim has bin written")
