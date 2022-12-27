@@ -10,7 +10,7 @@ def copie_file():
         vimrc_content = file.read()
     #print(vimrc_content)
     #with open(rf"/home/{getpass.getuser()}/.vimrc_test", "w") as file
-    with open(rf"/home/{getpass.getuser()}/.config/nvim/init.vim, "w") as file:
+    with open(rf"/home/{getpass.getuser()}/.config/nvim/init.vim", "w") as file:
         file.write(vimrc_content)
         print("init.vim has bin written")
 
