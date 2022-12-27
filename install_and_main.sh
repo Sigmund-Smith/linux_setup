@@ -60,4 +60,11 @@ if [[ "$yes_answer" == "$vim_answer" ]]; then
     echo "vimrc has been set up "
 fi
 
+read -p "Do you want to setup your nvim config (~/.config/nvim/init.vim)? (y/n): " nvim_answer
+
+if [[ "$yes_answer" == "$nvim_answer" ]]; then
+    python3 nvim_setup.py
+    echo "nvim/init.vim has been set up!"
+fi
+
 echo "yo, done"
