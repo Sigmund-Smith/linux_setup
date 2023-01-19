@@ -4,6 +4,7 @@ some scripts to make a fresh linux install easier to setup
 
 Step1: (install git) Clone repository
 Step2: run bashscript
+Step3: have fun
 
 todo:
 setup für tu coding ->
