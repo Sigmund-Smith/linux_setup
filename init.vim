@@ -1,3 +1,4 @@
+
 :inoremap üü <Esc>
 :set number
 :set relativenumber
@@ -15,3 +16,7 @@
 
 :nmap oo o<Esc>k
 :nmap OO O<Esc>j
+
+" saatr+s speichert
+:nnoremap <C-s> :w<CR> 
+:inoremap <C-s> <ESC>:w<CR> 
