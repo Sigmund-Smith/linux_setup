@@ -8,3 +8,5 @@ Step2: run bashscript
 todo:
 setup für tu coding ->
 clang valgrind gdb vim 
+rework .py and .sh files denn die sind ziemich schrecklich :(
+
